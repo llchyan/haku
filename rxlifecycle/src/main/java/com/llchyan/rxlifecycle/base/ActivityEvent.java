@@ -18,7 +18,6 @@ package com.llchyan.rxlifecycle.base;
  * Lifecycle events that can be emitted by Activities.
  */
 public enum ActivityEvent {
-
     CREATE,
     START,
     RESUME,

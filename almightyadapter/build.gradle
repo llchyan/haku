@@ -1,11 +1,10 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "com.llchyan.haku"
         minSdkVersion 14
         targetSdkVersion 23
         versionCode 1
@@ -22,9 +21,6 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:design:23.1.1'
-    compile project(':rxlifecycle')
-    //butterknife注解
-    compile 'com.jakewharton:butterknife:7.0.1'
-    compile project(':almightyadapter')
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.facebook.fresco:fresco:0.8.1'
 }
